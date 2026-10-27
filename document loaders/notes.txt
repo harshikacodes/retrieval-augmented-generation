@@ -1,0 +1,72 @@
+STATISTICS: CORRELATION AND REGRESSION
+======================================
+
+1. CORRELATION
+--------------
+Definition:
+Correlation measures the degree and direction of linear relationship between two variables.
+
+Types:
+- Positive correlation: Both variables increase together.
+- Negative correlation: One variable increases while the other decreases.
+- Zero correlation: No linear relationship.
+
+Methods to Measure:
+- Pearson’s correlation coefficient (r):
+  Formula: r = Σ[(xi - x̄)(yi - ȳ)] / √[Σ(xi - x̄)² * Σ(yi - ȳ)²]
+  Range: -1 ≤ r ≤ +1
+- Spearman’s rank correlation:
+  Formula: r_s = 1 - (6 Σd²) / [n(n² - 1)]
+  Used for ranked data.
+
+Interpretation:
+- r = +1 : Perfect positive linear relationship
+- r = -1 : Perfect negative linear relationship
+- r ≈ 0 : No linear relationship
+
+Limitations:
+- Only measures linear relationships.
+- Sensitive to outliers.
+
+2. REGRESSION
+-------------
+Definition:
+Regression estimates the relationship between a dependent variable (Y) and one or more independent variables (X).
+
+Types:
+- Simple linear regression: One independent variable.
+- Multiple regression: Two or more independent variables.
+
+Simple Linear Regression Equation:
+Y = a + bX
+Where:
+- a = intercept
+- b = slope (rate of change in Y per unit change in X)
+
+Calculation:
+b = Σ[(xi - x̄)(yi - ȳ)] / Σ(xi - x̄)²
+a = ȳ - b * x̄
+
+Interpretation:
+- Slope (b): Direction and magnitude of relationship.
+- Intercept (a): Value of Y when X = 0.
+
+Coefficient of Determination (R²):
+- Measures proportion of variance in Y explained by X.
+- Range: 0 to 1.
+
+Assumptions:
+- Linearity
+- Independence of errors
+- Homoscedasticity (constant variance)
+- Normality of residuals
+
+Differences between Correlation and Regression:
+- Correlation: Strength & direction of relationship; no causation implied.
+- Regression: Predicts Y from X; implies directional relationship.
+
+Applications:
+- Forecasting
+- Quality control
+- Economics
+- Social sciences

@@ -10,7 +10,7 @@ docs = data.load()
 
 template = ChatPromptTemplate.from_messages(
     [
-        ("system", "yout are AI that summarizes the text"),
+        ("system", "you are an AI that summarizes the text"),
         ("human", "{data}")
     ]
 )

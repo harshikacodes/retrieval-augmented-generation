@@ -6,15 +6,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 load_dotenv()
 
-data = PyPDFLoader("document loaders/GRU.pdf")
-docs = data.load()
-
-splitter = RecursiveCharacterTextSplitter(
-    chunk_size = 1000,
-    chunk_overlap = 200
-)
-
-chunks = splitter.split_documents(docs)
+# retrievers 
 
 template = ChatPromptTemplate.from_messages(
     [
@@ -24,8 +16,3 @@ template = ChatPromptTemplate.from_messages(
 )
 model = ChatGroq(model="openai/gpt-oss-120b")
 
-prompt = template.format_messages(data=docs)
-
-result = model.invoke(prompt)
-
-print(result.content)
